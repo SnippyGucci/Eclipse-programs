@@ -1,0 +1,65 @@
+package octalTriangle;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class TestingCode {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		String s = input.next();
+		String d = input.next();
+		int r = input.nextInt();
+		
+		int start = Integer.parseInt(s, 16);
+		int incre = Integer.parseInt(d, 16);
+		 
+		int[] Arr = new int[r];
+		Arrays.fill(Arr, 0);
+		int lastVal = start;
+		
+		for(int i = 1; i < r; i++) {
+			for(int c = 0; c <= i; c++) {
+				if(c==0) {
+					
+					Arr[c] = lastVal + incre;
+					
+				}
+				else {
+					
+				Arr[c] = Arr[c-1] + incre;
+				
+				}
+				lastVal = Arr[c];
+			}
+		}
+		
+		String[] strArr = new String[r];
+		String finStr = "";
+		String finVal = " ";
+	
+		for(int i = 0; i < r; i++) {
+			strArr[i] = Integer.toOctalString(Arr[i]);
+			finStr = finStr + strArr[i]; 
+		}
+		
+	
+		int sum = 0;
+		
+		do {
+			for(int i = 0; i < finStr.length(); i++) {
+				sum = sum + Integer.parseInt(Character.toString(finStr.charAt(i)), 16);
+			}
+			finStr = Integer.toOctalString(sum);
+			sum = 0;
+		}
+		while(finStr.length() != 1);
+		
+		System.out.println(finStr.toUpperCase().charAt(0));
+		
+	}
+
+}
+
+
+

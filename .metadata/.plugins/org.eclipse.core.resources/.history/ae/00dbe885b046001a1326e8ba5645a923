@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class pass {
+
+	public static void main(String[] args) {
+		Scanner guess = new Scanner(System.in);
+		
+		//string pass = "Nu#31e@R";
+		
+		System.out.println("Oh no! A Nuclear Missile is about to launch and obliterate your city!");
+		System.out.println("You can avoid this by enabling the shield reactor, however, the previous mayor \nforgot to hand you over the password");
+		System.out.println("However, he did leave you with some hints to guess the password.\nHowever, if you miss the password more than three times, the shield will self destruct\nand the missile will hit!");
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package vian;
+
+public class idk {
+
+	public static void main(String[] args) {
+		int x;
+		
+		for (x=10; x>=1; x=x-2) {
+			System.out.print(x);
+		}
+	}
+
+}

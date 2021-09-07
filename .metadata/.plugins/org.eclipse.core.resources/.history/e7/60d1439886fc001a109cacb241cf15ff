@@ -1,0 +1,41 @@
+package bin2dec;
+import java.util.*;
+
+public class bin2Dec_dec2Bin {
+	public static void main (String [] args) {
+	
+		Scanner input = new Scanner (System.in);
+		int runChoice = 2;
+		String str;
+		
+		do {
+			System.out.println("Enter '1': Binary To Decimal\n" + "Enter '2': Decimal to Binary");
+			runChoice = input.nextInt();
+		
+		} while (runChoice == 1 && runChoice == 2);
+
+		if (runChoice == 1) {
+			System.out.print("Insert the binary number: ");
+			int binary = input.nextInt();	
+			bin2dec(binary);	
+			
+		} else {
+			System.out.print("Insert the decimal number: ");
+			int decimal = input.nextInt();
+			dec2bin();
+			
+		}
+
+	} private static int bin2dec(int binary) {
+		int[] INDbinary = new int[binary];
+		System.out.print(INDbinary.length);
+		
+		return 0;
+		
+	} private static int dec2bin() {
+		return 0;
+		
+		
+	}
+	
+}

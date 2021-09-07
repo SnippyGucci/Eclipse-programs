@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class cyoa {
+
+	public static void main(String[] args) {
+		Scanner adventure = new Scanner(System.in);
+		
+		System.out.println("It is 3 am when you wake up. You feel very hungry, but you do not want to get out of bed.");
+		System.out.print("DO YOU WANT TO \"Sleep\" or \"Eat\"?");
+		String stage1 = adventure.nextLine();
+		
+		if (stage1 == "Sleep" || stage1 == "sleep") {
+			System.out.println("You sleep for 7 more hours. You are bored, but you do not know what to do.");
+			System.out.println("DO YOU WANT TO \"Go outside\" OR \"Play videogames\"?");
+			String stage2 = adventure.nextLine();
+			if (stage2 == "Go outside" || stage2 == "go outside") {
+				System.out.println("You go outside. It is a nice day out, so you decide to go to the movies. Right when that happens, your friends invite you to a picnic");
+				System.out.println("DO YOU WANT TO GO TO THE \"Movies\" OR ON A \"Picnic\"?");
+			} if (stage2 == "Play videogames" || stage2 == "play videogames") {
+				System.out.println("");
+			}
+		} if (stage1 == "Eat" || stage1 == "eat") {
+			System.out.println("You get up to get food.");
+			System.out.println("DO YOU WANT TO \"Make food\" OR \"Buy food\"?");
+			String stage2 = adventure.nextLine();
+			if (stage2 == "Make food" || stage2 == "make food") {
+				System.out.println("");
+			} if (stage2 == "Buy food" || stage2 == "buy food") {
+				System.out.println("");
+			}
+		}
+	}
+
+}
