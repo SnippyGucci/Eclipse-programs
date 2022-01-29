@@ -13,7 +13,7 @@ public class Library {
 		book2.setAuthor("John Steinbeck");
 
 
-		Client client1 = new Client("Vian Miranda", book1, book2, book3);
+		Client client1 = new Client("John Brock", book1, book2, book3);
 
 		client1.returnBook(book2);
 		System.out.println(client1.toString());
