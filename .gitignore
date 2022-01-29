@@ -2,6 +2,6 @@
 /snake/
 .metadata*
 Lake Alpha/.classpath
-apcsa/src/textfileDraw/textfileDraw.java
 apcsa/hs_err_pid37072.log
+apcsa/src/textfileDraw/*.txt
 
