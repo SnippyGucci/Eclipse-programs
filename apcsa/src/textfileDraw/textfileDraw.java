@@ -6,8 +6,8 @@ public class textfileDraw {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
-		Scanner input = new Scanner (new File("C:\\Users\\Vian Miranda\\Documents\\school\\grade 11\\comp sci\\initial-files\\input.txt"));
-		PrintWriter output = new PrintWriter(new File("C:\\Users\\Vian Miranda\\Documents\\school\\grade 11\\comp sci\\initial-files\\output.txt"));
+		Scanner input = new Scanner (new File(new Scanner(new File("input.txt"))));
+		PrintWriter output = new PrintWriter(new File(new Scanner(new File("output.txt"))));
 		
 		int runChoice;
 		while (input.hasNext() ) {
