@@ -4,7 +4,7 @@ Consists of 80+ projects made during high school.
 
 Files are organized based on grade
 
-Grade 9 projects: g9 - c++ projects
+Grade 9 projects: g09 - c++ projects
 
 Grade 10 projects: g10 - java projects
 
